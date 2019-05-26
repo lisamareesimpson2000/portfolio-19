@@ -9,37 +9,46 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <section id="homepage" class="container">
+    <section id="section_homepage" class="container">
         <div class="row">
                 <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-4 justify-content">
                     <img class="mx-auto img-fluid logo" alt="Responsive image"src="img/LMS-Logo-pf-solid.png" x>
             </div>
             <div class="col-4"></div>
             
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col pt-4">
                     <header>
-                        
-                        
                         <!-- <div class="">
                             <button type="button" class="btn btn-info btn_contact">Contact</button>
                         </div> -->
-                        <ul class="nav flex-column">
-                                <li class="nav-item">
-                                  <a class="btn btn_nav" href="#">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="btn btn_nav" href="#">Contact</a>
-                                </li>
-
-                                <li class="nav-item">
-                                  <a class="btn btn_nav" href="#" tabindex="-1" aria-disabled="true">About</a>
-                                </li>
-                        </ul>
                         <h1>Lisa Maree Simpson</h1>
                         <h2>Web UX Designer</h2>
+                        <ul class="nav justify-content-center pt-4">
+                                <li class="nav-item">
+                                        <button id="show__section--projects" class="btn btn_nav" type="button">Projects</button>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a id="show__section--about" class="btn btn_nav" href="#" tabindex="-1" aria-disabled="true">About</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a id="show__section--contact" class="btn btn_nav" href="#">Contact</a>
+                                      </li>
+                              </ul>
+                        <!-- <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <button id="show__section--projects" class="btn btn_nav" type="button">Projects</button>
+                                </li>
+                                <li class="nav-item">
+                                  <a id="show__section--about" class="btn btn_nav" href="#" tabindex="-1" aria-disabled="true">About</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a id="show__section--contact" class="btn btn_nav" href="#">Contact</a>
+                                </li>
+                        </ul> -->
+                        
                     </header>
             </div>
         </div>
@@ -89,7 +98,7 @@
                                   </div>
                                 </div>
                                 <div class="card">
-                                  <img src="..." class="card-img-top" alt="...">
+                                  <img src="img/appLaptop.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -104,13 +113,106 @@
             </div>
         </div>
     </section>
-    <div id="triangle-bottomleft"></div>
-    <footer>
-      
-        <p class="pt-2">&copy; Copyright Lisa Maree Simpson 2019</p>
-    </footer>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="thumbnail">
+                        <img id="img_profile" class="img-responsive" src="img/profile-lisa.jpg" alt="profile photo">
+                    </div>
+                </div>
+                <!-- <div class="col-6"></div> -->
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1>Get in Touch</h1>
+                    <form>
+                            <div class="form-group">
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your name..">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter email..">
+                            </div>
+                            <div class="form-group">
+                                    <label for="subject">Message</label>
+                                    <textarea id="subject" class="form-control" name="subject" placeholder="Write message.." style="height:170px"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn_nav">Submit</button>
+                    </form>
+                </div>
+                <div class="col-2">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                </div>
+                <!-- <div class="col-2">
+                    <ul class="social-media-list">
+                        <h2>Find me on:</h2>
+                            <li><a href="https://github.com/lisamareesimpson2000"><img src="https://unpkg.com/simple-icons@latest/icons/github.svg" alt="GitHub" title="GitHub"></a></li>
+                            <li><a href="https://www.linkedin.com/in/lisa-simpson-36946516b/"><img src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg" alt="Linkedin" title="Linkedin"></a></a></li>
+                            <li><a href="https://www.instagram.com/lisamaree_design/"><img src="https://unpkg.com/simple-icons@latest/icons/instagram.svg" alt="Instagram" title="Instagram"></a></a></li>
+
+                    </ul>
+                </div> -->
+                
+            </div>
+        </div>
+    </section>
+    <div id="triangle-bottomleft"></div>
+    <!-- <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                    <p class="pt-2">&copy; Copyright Lisa Maree Simpson 2019</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                    <ul class="social-media-list">
+                            <h2>Find me on:</h2>
+                                <li><a href="https://github.com/lisamareesimpson2000"><img src="https://unpkg.com/simple-icons@latest/icons/github.svg" alt="GitHub" title="GitHub"></a></li>
+                                <li><a href="https://www.linkedin.com/in/lisa-simpson-36946516b/"><img src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg" alt="Linkedin" title="Linkedin"></a></a></li>
+                                <li><a href="https://www.instagram.com/lisamaree_design/"><img src="https://unpkg.com/simple-icons@latest/icons/instagram.svg" alt="Instagram" title="Instagram"></a></a></li>
+    
+                        </ul>
+              </div>
+          </div>
+      </div>
+        
+    </footer> -->
+<footer id="footer">
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Find me on..</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/lisamareesimpson2000" target="_blank">GitHub<a href="https://github.com/lisamareesimpson2000" target="_blank"><img class="icon_social" src="https://unpkg.com/simple-icons@latest/icons/github.svg" alt="GitHub" title="GitHub"></a></li></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/lisa-simpson-36946516b/" target="_blank">Linkedin<a href="https://www.linkedin.com/in/lisa-simpson-36946516b/" target="_blank"><img class="icon_social" src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg" alt="Linkedin" title="Linkedin"></a></a></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/lisamaree_design/" target="_blank">Instagram<a href="https://www.instagram.com/lisamaree_design/" target="_blank"><img class="icon_social" src="https://unpkg.com/simple-icons@latest/icons/instagram.svg" alt="Instagram" title="Instagram"></a></a></a>
+                </li>
+              </ul>
+        </div>
+    </nav>
+</footer>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

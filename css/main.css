@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #314657; }
 
@@ -23,7 +28,7 @@ h1 {
 h2 {
   font-family: Andale Mono;
   color: #f0e5c7;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   padding-top: 20px; }
 
@@ -32,11 +37,6 @@ footer {
   height: 50px;
   background-color: #9acabb;
   text-align: center; }
-
-.logo {
-  width: 50%;
-  margin: auto;
-  border-radius: 50%; }
 
 .btn_nav {
   font-family: Andale Mono;
@@ -52,3 +52,6 @@ footer {
   color: #fff;
   background-color: #9acabb;
   border-color: #9acabb; }
+
+.iconsocial {
+  width: 15px !important; }

@@ -1,9 +1,13 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 body{
     // background: url(../img/sunset-petone.jpg)no-repeat ;
     background-color: $blue;
     // width: 100%;
-    // height: 100%;
+    //@debugheight: auto;
   }
   
   .triangle{
@@ -47,7 +51,7 @@ h1{
 h2{
     font-family: $mH;
     color: $cream;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
     padding-top: 20px;
 }
@@ -57,11 +61,11 @@ footer{
     background-color: $mint;
     text-align: center;
 }
-.logo{
-    width: 50%;
-    margin: auto;
-    border-radius: 50%
-}
+// .logo{
+//     //width: 50%;
+//     margin: auto;
+//     border-radius: 50%
+// }
 .btn_nav{
     font-family: $mH;
     color: $cream;
@@ -80,4 +84,19 @@ footer{
     color: #fff;
     background-color: $mint;
     border-color: $mint;
+}
+
+//ABOUT
+// img#img_profile{
+//     width: 100px !important;
+//     //display: relative;
+    
+
+// }
+// img{
+//     width: 100px !important;
+// }
+
+.iconsocial{
+    width: 15px !important;
 }
