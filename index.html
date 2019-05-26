@@ -9,24 +9,105 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Projects</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+    <section id="homepage" class="container">
+        <div class="row">
+                <div class="col-4"></div>
+            <div class="col-4">
+                    <img class="mx-auto img-fluid logo" alt="Responsive image"src="img/LMS-Logo-pf-solid.png" x>
             </div>
-        </nav>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-            </div>
-    </header>
+            <div class="col-4"></div>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+                    <header>
+                        
+                        
+                        <!-- <div class="">
+                            <button type="button" class="btn btn-info btn_contact">Contact</button>
+                        </div> -->
+                        <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a class="btn btn_nav" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="btn btn_nav" href="#">Contact</a>
+                                </li>
 
+                                <li class="nav-item">
+                                  <a class="btn btn_nav" href="#" tabindex="-1" aria-disabled="true">About</a>
+                                </li>
+                        </ul>
+                        <h1>Lisa Maree Simpson</h1>
+                        <h2>Web UX Designer</h2>
+                    </header>
+            </div>
+        </div>
+    </section>
+    
+    <div class="triangle">&nbsp;</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                    
+                    <!-- <button id="triangle-bottomleft" type="button" class="btn">Projects</button> -->
+                    <!-- <div class="triangle_2">&nbsp;</div> -->
+                    
+            </div>
+        </div>
+
+    </div>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <div class="card-deck">
+                                <div class="card">
+                                  <img src="img/appLaptop.jpg" class="card-img-top" alt="marlborough escape">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Marlborough Escape</h5>
+                                    <p class="card-text">Tourism New Zealand works with the tourism industry to positively promote New Zealand Internationally. I created a web application for accommodation based in the Marlborough sounds and targeting visitors that are interested in doing the Queen Charlotte Track.
+
+                                            The website allows travelers to find their own accommodation and select how many people are in their party and how long they will be staying. There are also meal options to choose from. This website is a helpful tool for visitors to New Zealand to work out how much it will cost them. 
+                                     </p>
+                                     <button type="button" class="btn btn_nav">View Process</button>
+                                  </div>
+                                  <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="img/mobilescreen.png" class="card-img-top" alt="comes and goes menu">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Comes and Goes</h5>
+                                    <p class="card-text">Comes and Goes brings an explosion of edible flowers and culinary masterpieces that Wellingtonians are enjoying. Its clean, minimalist look and ‘gram-worthy’ menu have attracted clientele from all over the Wellington region. I have created an online menu to help create excellent 
+                                            customer engagement and brand awareness as they currently don't have a website.</p>
+                                    <button type="button" class="btn btn_nav">View Process</button>
+                                </div>
+                                  <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="..." class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                  </div>
+                                  <div class="card-footer">
+                                      <button type="button" class="btn btn_nav">View Process</button>
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="triangle-bottomleft"></div>
     <footer>
-            <nav></nav>
-        <p>&copy; Copyright Lisa Maree Simpson 2019</p>
+      
+        <p class="pt-2">&copy; Copyright Lisa Maree Simpson 2019</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
