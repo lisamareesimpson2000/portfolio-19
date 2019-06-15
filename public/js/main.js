@@ -1,3 +1,4 @@
+// $ = jQuery;
 // $(document).ready(function(e){
 // 	setTriangle();
 // })
@@ -9,7 +10,7 @@
 //   var triangle = $('.triangle');
 //   triangle.css('border-right', scrW + 'px solid transparent');
 // };
-console.log("hi")
+console.log("yo");
 
 // $(document).ready(function(e){
 // 	setTriangle_2();
