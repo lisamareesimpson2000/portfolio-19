@@ -1,7 +1,12 @@
 module.exports = function(grunt) {
-
-    // Project configuration.
     grunt.initConfig({
+        sass: {                             
+          dist: {                           
+            files: {                        
+              'public/css/main.css': 'public/sass/main.scss'      
+            }
+          }
+        },
         watch: {
             files: ['public/**/*.*'],
             tasks: ['jshint']
@@ -10,8 +15,6 @@ module.exports = function(grunt) {
             my_target: {
               files: {
                 'public/js/main.min.js': ['public/js/main.js']
-                //'public/css/main.min.css': ['public/css/main.css']
-               
               }
             }
           },
@@ -22,23 +25,13 @@ module.exports = function(grunt) {
                 jQuery: true
               }
             }
-          },
-          sass: {                              // Task
-            dist: {                            // Target
-              
-              files: {                         // Dictionary of files
-                'public/css/style.css': 'public/sass/main.scss'      // 'destination': 'source'
-              }
-            }
-          },
+          }
         });
-    // Load the plugin that provides the "uglify" task.
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-sass');
-  
-    // Default task(s).
-    grunt.registerTask('default', ['uglify', 'watch', 'jshint', 'sass']);
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    
+    grunt.registerTask('default', ['sass', 'watch', 'uglify', 'jshint' ]);
   
   };

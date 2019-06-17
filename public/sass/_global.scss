@@ -1,12 +1,12 @@
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-//   }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 body{
     // background: url(../img/sunset-petone.jpg)no-repeat ;
     //background-color: $blue;
-    background-color: red;
+    background-color: $blue;
     // width: 100%;
     //@debugheight: auto;
   }
@@ -15,7 +15,7 @@ body{
     width: 0;
     height: 20%;
     //opacity: .6;
-    border-bottom: 100vh solid yellow;
+    border-bottom: 100vh solid $mint;
     //border-bottom: 100vh solid $mint;
     border-left: 100vw solid transparent;
     //border-right: 100vw solid transparent;
