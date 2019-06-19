@@ -8,9 +8,16 @@ module.exports = function(grunt) {
           }
         },
         watch: {
-            files: ['public/**/*.*'],
-            tasks: ['jshint']
-          },
+        sass: {
+          files: ['public/sass/*.scss'],
+          tasks: ['sass']
+        },
+        js: {
+          files: ['public/js/main.js'],
+          tasks: ['jshint', 'uglify']
+        }
+      },
+      
           uglify: {
             my_target: {
               files: {
@@ -19,7 +26,7 @@ module.exports = function(grunt) {
             }
           },
           jshint: {
-            files: ['Gruntfile.js', 'public/js/*.js'],
+            files: ['public/js/main.js'],
             options: {
               globals: {
                 jQuery: true
@@ -32,6 +39,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     
-    grunt.registerTask('default', ['sass', 'watch', 'uglify', 'jshint' ]);
+    grunt.registerTask('default', ['watch']);
   
   };

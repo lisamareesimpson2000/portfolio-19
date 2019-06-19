@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-family: Andale Mono;
+  font-family: Andale Mono, "Space Mono", monospace;
   color: #f0e5c7;
   font-size: 2em;
   text-align: center;
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-family: Andale Mono;
+  font-family: Andale Mono, "Space Mono", monospace;
   color: #f0e5c7;
   font-size: 1.2em;
   text-align: center;
@@ -46,7 +46,7 @@ footer {
 }
 
 .btn_nav {
-  font-family: Andale Mono;
+  font-family: Andale Mono, "Space Mono", monospace;
   color: #f0e5c7;
   font-size: 1em;
   text-align: center;
@@ -62,8 +62,12 @@ footer {
   border-color: #9acabb;
 }
 
-.iconsocial {
-  width: 15px !important;
+.nav-link {
+  width: 100px !important;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
