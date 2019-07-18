@@ -8,20 +8,6 @@ body {
   background-color: #314657;
 }
 
-.triangle {
-  width: 0;
-  height: 20%;
-  border-bottom: 100vh solid #9acabb;
-  border-left: 100vw solid transparent;
-}
-
-#triangle-bottomleft {
-  width: 0;
-  height: 0;
-  border-bottom: 100px solid #e4968b;
-  border-right: 100px solid transparent;
-}
-
 h1 {
   font-family: Andale Mono, "Space Mono", monospace;
   color: #f0e5c7;
@@ -38,6 +24,13 @@ h2 {
   padding-top: 20px;
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+}
+
 footer {
   width: 100%;
   height: 50px;
@@ -45,9 +38,17 @@ footer {
   text-align: center;
 }
 
+.logo {
+  width: 7vh;
+}
+
+.logo_cont {
+  text-align: center;
+}
+
 .btn_nav {
   font-family: Andale Mono, "Space Mono", monospace;
-  color: #f0e5c7;
+  color: #fff;
   font-size: 1em;
   text-align: center;
   background-color: #e4968b;
@@ -58,8 +59,8 @@ footer {
 
 .btn:hover {
   color: #fff;
-  background-color: #9acabb;
-  border-color: #9acabb;
+  background-color: #98cbe3;
+  border-color: #98cbe3;
 }
 
 .nav-link {
@@ -68,6 +69,177 @@ footer {
 
 .pointer {
   cursor: pointer;
+}
+
+#section_homepage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.rect1 {
+  width: 100vh;
+  height: 100vw;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%) rotate(45deg);
+  z-index: 2;
+}
+
+.rect2 {
+  width: 100vh;
+  height: 100vw;
+  background-color: #98cbe3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%) rotate(60deg);
+  z-index: 2;
+}
+
+.rect1 {
+  width: 50vh;
+  height: 250vw;
+  background-color: #cbdaf3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%) rotate(30deg);
+  z-index: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 465px) {
+  .rect2 {
+    width: 120vh;
+    height: 100vw;
+    background-color: #98cbe3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%) rotate(55deg);
+    z-index: 2;
+  }
+
+  .rect1 {
+    width: 60vh;
+    height: 250vw;
+    background-color: #cbdaf3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%) rotate(30deg);
+    z-index: 1;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    padding-top: 7vh;
+  }
+
+  .rect2 {
+    width: 120vh;
+    height: 100vw;
+    background-color: #98cbe3;
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
+
+  .rect1 {
+    width: 80vh;
+    height: 250vw;
+    background-color: #cbdaf3;
+    transform: translate(50%, 50%) rotate(35deg);
+  }
+
+  .logo_cont {
+    padding-top: 5vh;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .rect2 {
+    width: 130vh;
+    height: 100vw;
+    background-color: #98cbe3;
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
+
+  .rect1 {
+    width: 100vh;
+    height: 250vw;
+    background-color: #cbdaf3;
+    transform: translate(50%, 50%) rotate(40deg);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .rect2 {
+    width: 120vh;
+    height: 80vw;
+    background-color: #98cbe3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%) rotate(50deg);
+    z-index: 2;
+  }
+
+  .rect1 {
+    width: 120vh;
+    height: 280vw;
+    background-color: #cbdaf3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%) rotate(40deg);
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 1015px) {
+  .rect2 {
+    width: 140vh;
+    height: 80vw;
+    background-color: #98cbe3;
+    transform: translate(-50%, 50%) rotate(50deg);
+  }
+
+  .rect1 {
+    width: 120vh;
+    height: 280vw;
+    background-color: #cbdaf3;
+    transform: translate(50%, 50%) rotate(40deg);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .rect2 {
+    width: 120vh;
+    height: 60vw;
+    transform: translate(-50%, 50%) rotate(40deg);
+  }
+
+  .rect1 {
+    width: 120vh;
+    height: 280vw;
+    transform: translate(50%, 50%) rotate(45deg);
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .rect2 {
+    width: 180vh;
+    height: 70vw;
+    transform: translate(-50%, 50%) rotate(40deg);
+  }
+
+  .rect1 {
+    width: 140vh;
+    height: 280vw;
+    transform: translate(50%, 50%) rotate(45deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
